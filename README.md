@@ -1,5 +1,5 @@
 # Card-Validator
-The script performs validation I tightened and adjusted Langolr 2. Validation for all credit cards - including MasterCard and Visa. (The script also makes validation of Isracard cards).
+This script allows to perform validation of credit cards. Validation for all credit cards - including MasterCard and Visa. (The script also makes validation of Isracard cards).
 
 This script designed for Angular 2 apps, but you can easily change it to another frameworks. just change the type of the argument to to your chosen type.
 
