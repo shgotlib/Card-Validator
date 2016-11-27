@@ -8,7 +8,7 @@ export class CreditCardValidator {
 
         if (cardNumber == "")
             return;
-
+        // the card is Visa, validatation with visa algorithm
         if (numDigits >= 14 && numDigits <= 16) {
             var sum = 0, i = numDigits - 1, pos = 1, digit, luhn = new String();
             do {
@@ -20,6 +20,8 @@ export class CreditCardValidator {
                 sum += parseInt(luhn.charAt(i));
             }
             valid = sum % 10 == 0;
+            
+        // the card is Isracard, validatation with Isracard algorithm
         } else if (numDigits >= 8 && numDigits <= 9) {
             var sum = 0;
 
